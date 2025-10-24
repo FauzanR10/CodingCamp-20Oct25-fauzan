@@ -16,72 +16,136 @@
 <body>
 
     <!-- Header Content -->
-    <header class="main-header p-[8px]">
+    <header class="main-header p-4">
         <!-- Logo Website -->
         <div class="main-logo"></div>
 
         <!-- Navigation Menu -->
-        <nav class="flex gap-1">
-            <a class="border rounded p-2" href="#home-section">Home</a>
-            <a class="border rounded p-2" href="#profile-section">Our Profile</a>
-            <a class="border rounded p-2" href="#portfolio-section">Portfolio</a>
-            <a class="border rounded p-2" href="#message-section">Message Us</a>
+        <nav class="flex gap-2">
+            <a class="nav-link rounded-lg px-4 py-2 font-medium" href="#home-section">Home</a>
+            <a class="nav-link rounded-lg px-4 py-2 font-medium" href="#profile-section"> Our Profile</a>
+            <a class="nav-link rounded-lg px-4 py-2 font-medium" href="#portfolio-section">Portfolio</a>
+            <a class="nav-link rounded-lg px-4 py-2 font-medium" href="#message-section">Message Us</a>
         </nav>
     </header>
-
-    <hr />
 
     <!-- Main Content -->
     <main>
         <!-- Home -->
-        <section id="home-section" class="hero-section p-4 min-h-[500px]">
-            <h1 class="text-3xl font-bold mb-4"><span id="greet-name"></span>Welcome to My Portfolio</h1>
-            <p class="text-lg">This is a brief introduction about myself and my work.</p>
+        <section id="home-section" class="hero-section p-12 min-h-[500px] flex flex-col justify-center">
+            <h1 class="text-5xl font-bold mb-6 text-gray-800">
+                <span id="greet-name"></span>Welcome to My Portfolio
+            </h1>
+            <p class="text-xl text-black-600 mb-8 max-w-2xl">
+                Hai! I'm Fauzan, a passionate web developer dedicated to crafting beautiful and functional websites.
+            </p>
+            <div>
+                <a href="#portfolio-section" class="btn-primary text-white px-8 py-3 rounded-full font-semibold inline-block">
+                    View My Work
+                </a>
+            </div>
         </section>
-
-        <hr />
 
         <!-- Our Profile -->
-        <section id="profile-section" class="profile-section p-4 min-h-[500px]">
-            <h2 class="text-2xl font-bold mb-4">Our Profile</h2>
-            <p class="text-lg">Details about my background, skills, and experiences.</p>
+        <section id="profile-section" class="profile-section p-12 min-h-[500px]">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">Our Profile</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-lg text-gray-700 mb-6">
+                        I'm a front-end web developer with a knack for creating engaging user experiences.
+                        With a strong foundation in HTML, CSS, and JavaScript, I specialize in building responsive and
+                        interactive websites that captivate audiences.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        When I'm not coding, I enjoy exploring the latest design trends and enhancing my skills
+                        through continuous learning. Let's connect and create something amazing together!
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Skills</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="text-lg">• HTML/CSS</li>
+                        <li class="text-lg">• JavaScript</li>
+                        <li class="text-lg">• React</li>
+                        <li class="text-lg">• UI/UX Design</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-
-        <hr />
 
         <!-- Portfolio -->
-        <section id="portfolio-section" class="portfolio-section p-4 min-h-[500px]">
-            <h2 class="text-2xl font-bold mb-4">Portfolio</h2>
-            <p class="text-lg">Showcase of my projects and accomplishments.</p>
+        <section id="portfolio-section" class="portfolio-section p-12 min-h-[500px]">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">My Portfolio</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="portfolio-card">
+                    <img src="https://picsum.photos/400/300?random=1" alt="Project 1">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">A modern shopping experience with seamless checkout</p>
+                        <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">React</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="https://picsum.photos/400/300?random=2" alt="Project 2">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Wedding Photography & Videography</h3>
+                        <p class="text-gray-600 mb-4">Interactive portfolio website showcasing wedding moments with booking system and gallery</p>
+                        <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="https://picsum.photos/400/300?random=3" alt="Project 3">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Catering Service Website</h3>
+                        <p class="text-gray-600 mb-4">Professional catering for your special events and occasions</p>
+                        <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr />
-
         <!-- Message Us -->
-        <section id="message-section" class="message-section p-4 min-h-[500px]">
-            <h2 class="text-2xl font-bold mb-4">Message Us</h2>
-            <p class="text-lg">Feel free to reach out for collaborations or inquiries.</p>
+        <section id="message-section" class="message-section p-12 min-h-[500px]">
+            <h2 class="text-4xl font-bold mb-8 text-gray-800">Message Us</h2>
+            <div class="max-w-2xl mx-auto">
+                <p class="text-lg text-gray-600 mb-8 text-center">
+                    Have a project in mind? Let's work together to bring your ideas to life.
+                </p>
 
-            <form>
-                <label for="name" class="block mb-2">Name:</label>
-                <input type="text" id="name-input" name="name" class="border p-2 mb-4 w-full" required>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name-input" class="block mb-2 font-medium text-gray-700">Name</label>
+                        <input type="text" id="name-input" name="name" 
+                               class="form-input border-2 border-gray-300 p-3 w-full rounded-lg" 
+                               placeholder="Your name" required>
+                    </div>
 
-                <label for="email" class="block mb-2">Email:</label>
-                <input type="email" id="email-input" name="email" class="border p-2 mb-4 w-full" required>
+                    <div>
+                        <label for="email-input" class="block mb-2 font-medium text-gray-700">Email</label>
+                        <input type="email" id="email-input" name="email" 
+                               class="form-input border-2 border-gray-300 p-3 w-full rounded-lg" 
+                               placeholder="your.email@example.com" required>
+                    </div>
 
-                <label for="message" class="block mb-2">Message:</label>
-                <textarea id="message-input" name="message" class="border p-2 mb-4 w-full" rows="4" required></textarea>
-            </form>
+                    <div>
+                        <label for="message-input" class="block mb-2 font-medium text-gray-700">Message</label>
+                        <textarea id="message-input" name="message" 
+                                  class="form-input border-2 border-gray-300 p-3 w-full rounded-lg" 
+                                  rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
 
-            <button onclick="validateForm();" class="bg-blue-500 text-white p-2 rounded">Send Message</button>
+                    <button type="button" onclick="validateForm();" 
+                            class="btn-primary text-white px-8 py-3 rounded-full font-semibold w-full">
+                        Send Message
+                    </button>
+                </form>
+            </div>
         </section>
     </main>
 
     <!-- Footer Content -->
-    <footer>
-        <div class="footer-content p-4 text-center">
-            <p class="text-sm">&copy; 2025 Fauzan's Portfolio. All rights reserved.</p>
-        </div>
+    <footer class="footer-content p-8 text-center">
+        <p class="text-sm">&copy; 2025 Fauzan's Portfolio. All rights reserved.</p>
     </footer>
 
     <!-- Javascript External File -->
